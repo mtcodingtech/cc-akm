@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .card {
+        position: relative;
+        bottom: 2rem;
+        left: 4rem;
+        background-color: pink;
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        margin: 50px auto;
+        overflow: hidden;
+      }
+      .card img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        background-color: pink;
+      }
+      .card h1 {
+        background-color: rgba(165, 42, 42, 0.701);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/30486091/pexels-photo-30486091/free-photo-of-vibrant-floral-display-at-den-haag-market.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="img"
+      />
+      <h1>Heading 1</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+      .container {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-wrap: wrap;
+        
+      }
+      span {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        color: #fff;
+        display: block;
+      }
+
+      span:nth-child(1){
+        order: 2;
+        flex-grow: 2;
+        background-color: rgb(53, 87, 235);
+      }
+      span:nth-child(2){
+        order: 3;
+        /* align-self: flex-end; */
+        background-color: rgb(234, 63, 203);
+      }
+      span:nth-child(3){
+        order: 1;
+        flex-grow: 1;
+        /* align-self: flex-start; */
+        background-color: rgb(228, 202, 32);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- span*3{$} -->
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+     
+     
+    </div>
+  </body>
+</html>

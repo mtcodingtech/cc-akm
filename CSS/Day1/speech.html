@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+      .box {
+        background-color: blueviolet;
+        padding: 1.4rem;
+        color: #fff;
+        width: 300px;
+        position: relative;
+
+      }
+      .box::before{
+        content: "";
+        border: 20px solid transparent;
+        border-top-color: blueviolet;
+        position: absolute;
+        bottom: -2.45rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sapiente
+      blanditiis temporibus earum iusto? Enim provident aut sapiente dolore
+      voluptatum dolorem deleniti dolores, rem id architecto nobis, atque
+      nostrum vel?
+    </div>
+  </body>
+</html>
