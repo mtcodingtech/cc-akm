@@ -1,0 +1,108 @@
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$Very-Dark-Blue: hsl(234, 12%, 34%);
+$Grayish-Blue: hsl(229, 6%, 66%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 15px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 2rem;
+
+  .content {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    h3,
+    h1 {
+      font-size: 1.3rem;
+    }
+    h3 {
+      font-weight: 200;
+      color: $Very-Dark-Blue;
+    }
+    h1 {
+      font-weight: 600;
+      color: $Very-Dark-Blue;
+    }
+    p {
+      color: $Grayish-Blue;
+      font-size: 0.8rem;
+      margin: 0.8rem 0;
+    }
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2.5rem 0;
+    .card {
+      flex-basis: 100%;
+      box-shadow: 0 3px 10px $Grayish-Blue;
+      padding: 1rem 1.2rem;
+      border-radius: 0.3rem;
+      border-top: 3px solid;
+      @media (min-width: 768px) {
+        flex-basis: 40%;
+      }
+      @media (min-width: 992px) {
+        flex-basis: 30%;
+      }
+      h4 {
+        color: $Very-Dark-Blue;
+        font-weight: 600;
+      }
+      p {
+        color: $Grayish-Blue;
+        font-size: 11px;
+        margin: 0.3rem 0;
+      }
+      .img-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+        img {
+          width: 15%;
+        }
+      }
+    }
+    .supervisor {
+      border-top-color: $Cyan;
+      @media (min-width: 992px) {
+        transform: translateY(50%);
+      }
+    }
+    .team {
+      border-top-color: $Red;
+    }
+    .karma {
+      order: 4;
+      border-top-color: $Orange;
+    }
+    .calculator {
+      order: 3;
+      border-top-color: $Blue;
+      @media (min-width: 992px) {
+        transform: translateY(50%);
+      }
+    }
+  }
+}

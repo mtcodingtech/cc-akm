@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 15px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 2rem;
+}
+.container .content {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+.container .content h3,
+.container .content h1 {
+  font-size: 1.3rem;
+}
+.container .content h3 {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+.container .content h1 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+.container .content p {
+  color: hsl(229, 6%, 66%);
+  font-size: 0.8rem;
+  margin: 0.8rem 0;
+}
+.container .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+.container .card-container .card {
+  flex-basis: 100%;
+  box-shadow: 0 3px 10px hsl(229, 6%, 66%);
+  padding: 1rem 1.2rem;
+  border-radius: 0.3rem;
+  border-top: 3px solid;
+}
+@media (min-width: 768px) {
+  .container .card-container .card {
+    flex-basis: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .container .card-container .card {
+    flex-basis: 30%;
+  }
+}
+.container .card-container .card h4 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+.container .card-container .card p {
+  color: hsl(229, 6%, 66%);
+  font-size: 11px;
+  margin: 0.3rem 0;
+}
+.container .card-container .card .img-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+.container .card-container .card .img-container img {
+  width: 15%;
+}
+.container .card-container .supervisor {
+  border-top-color: hsl(180, 62%, 55%);
+}
+@media (min-width: 992px) {
+  .container .card-container .supervisor {
+    transform: translateY(50%);
+  }
+}
+.container .card-container .team {
+  border-top-color: hsl(0, 78%, 62%);
+}
+.container .card-container .karma {
+  order: 4;
+  border-top-color: hsl(34, 97%, 64%);
+}
+.container .card-container .calculator {
+  order: 3;
+  border-top-color: hsl(212, 86%, 64%);
+}
+@media (min-width: 992px) {
+  .container .card-container .calculator {
+    transform: translateY(50%);
+  }
+}/*# sourceMappingURL=style.css.map */

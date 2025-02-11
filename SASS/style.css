@@ -1,0 +1,38 @@
+.btn, .box button, .main-container .content button {
+  background-color: blue;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.main-container .content h1 {
+  background-color: blue;
+  color: #fff;
+}
+.main-container .content p {
+  color: blue;
+}
+.container-1 {
+  height: 80vh;
+  background-color: hotpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-2 {
+  height: 50vh;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-3 {
+  height: 100vh;
+  background-color: rgb(255, 0, 183);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
