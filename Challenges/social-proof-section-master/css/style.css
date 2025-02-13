@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-container {
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 1.5rem;
+}
+@media (min-width: 992px) {
+  .main-container .container {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .main-container .container .content-container {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .main-container .container .content-container .content {
+    max-width: 65%;
+  }
+}
+.main-container .container .content-container .content h1 {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  font-size: 2.3rem;
+}
+.main-container .container .content-container .content p {
+  color: hsl(303, 10%, 53%);
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+@media (min-width: 992px) {
+  .main-container .container .rate-container {
+    flex-basis: 50%;
+  }
+}
+.main-container .container .rate-container .rate {
+  background-color: hsl(300, 24%, 96%);
+  margin: 0.7rem 0;
+  padding: 0.7rem 1.2rem;
+  gap: 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .main-container .container .rate-container .rate {
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+  }
+}
+.main-container .container .rate-container .rate .icon-container img {
+  width: 0.7rem;
+}
+.main-container .container .rate-container .rate p {
+  color: hsl(300, 43%, 22%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 0.6rem;
+}
+@media (min-width: 992px) {
+  .main-container .container .rate-container .rate p {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .main-container .container .rate-container .rate:nth-child(2) {
+    transform: translateX(2rem);
+  }
+}
+@media (min-width: 992px) {
+  .main-container .container .rate-container .rate:nth-child(3) {
+    transform: translateX(4rem);
+  }
+}
+.main-container .card-container {
+  margin: 2.5rem 0;
+}
+@media (min-width: 992px) {
+  .main-container .card-container {
+    display: flex;
+    gap: 1.2rem;
+  }
+}
+.main-container .card-container .card {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+  margin-top: 4px;
+}
+.main-container .card-container .card .profile-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.main-container .card-container .card .profile-container img {
+  border-radius: 50%;
+  width: 1.8rem;
+}
+.main-container .card-container .card .profile-container .profile-content h5,
+.main-container .card-container .card .profile-container .profile-content p {
+  font-size: 0.8rem;
+}
+.main-container .card-container .card .profile-container .profile-content h5 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+.main-container .card-container .card .profile-container .profile-content p {
+  color: hsl(333, 80%, 67%);
+  margin-top: 0.2rem;
+}
+.main-container .card-container .card .detail {
+  margin: 1.2rem 0 0;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+.main-container .card-container .card:nth-child(2) {
+  transform: translateY(0.6rem);
+}
+.main-container .card-container .card:nth-child(3) {
+  transform: translateY(1.2rem);
+}/*# sourceMappingURL=style.css.map */
