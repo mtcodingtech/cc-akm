@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a = {};
+        // let b = {};
+        // console.log(a === b)
+
+        // let user = {
+        //     name: "MT"
+        // };
+        // let admin = user;
+        // admin.name = "Khine";
+
+        // console.log("user", user)
+        // console.log("admin", admin)
+        
+        let user = {
+            name: "MT",
+            age: 20
+        };
+        let cloneUser = {};
+
+        for(let key in user){
+            cloneUser[key] = user[key]
+        }
+        cloneUser.name = "John";
+        console.log("user", user)
+        console.log("cloneUser", cloneUser)
+
+        console.log(user === cloneUser)
+    </script>
+</body>
+</html>

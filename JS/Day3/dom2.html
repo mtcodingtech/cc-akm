@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="parent">
+      <li>apple</li>
+      <li>orange</li>
+    </ul>
+    <script>
+      let liElement = document.createElement("li");
+      let textNode = document.createTextNode("mango");
+      liElement.appendChild(textNode);
+
+      let ulElement = document.getElementById("parent");
+      // ulElement.appendChild(liElement)
+
+      console.log(liElement);
+      console.log(ulElement.children[1]);
+      ulElement.insertBefore(liElement, ulElement.children[1]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+$Dark-Gray: hsl(0, 0%, 55%);
+$Very-Dark-Gray: hsl(0, 0%, 41%);
+$Black-Opacity: hsla(0, 0%, 0%, 0.4);
+$Section-Width: 85%;
+
+.alata-regular {
+  font-family: "Alata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+}
+p,
+a {
+  font-family: "Alata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+}
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-color: $Black-Opacity;
+  background-blend-mode: overlay;
+  @media (min-width: 992px) {
+    background-image: url("../images/desktop/image-hero.jpg");
+  }
+  .container {
+    max-width: $Section-Width;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo-img {
+        width: 9rem;
+      }
+      .menu-icon {
+        @media (min-width: 992px) {
+          display: none;
+        }
+      }
+      ul {
+        list-style: none;
+        gap: 1.2rem;
+        display: none;
+        @media (min-width: 992px) {
+          display: flex;
+        }
+        li {
+          a {
+            text-decoration: none;
+            color: $White;
+          }
+        }
+      }
+    }
+    h1 {
+      font-size: 3rem;
+      border: 2px solid $White;
+      max-width: 100%;
+      color: $White;
+      padding: 1.2rem;
+      transform: translateY(80%);
+      @media (min-width: 992px) {
+        max-width: 40%;
+      }
+    }
+  }
+}
+
+.vr-section {
+  max-width: 100%;
+  margin: 5.2rem 1.2rem;
+  
+  position: relative;
+  @media (min-width: 992px) {
+    max-width: $Section-Width;
+    display: flex;
+    margin: 5.2rem auto;
+  }
+  img {
+    width: 100%;
+    @media (min-width: 992px) {
+      width: 60%;
+    }
+  }
+  .content {
+    background-color: $White;
+    padding: 2rem 1rem 0;
+    max-width: 100%;
+    text-align: center;
+    @media (min-width: 992px) {
+      max-width: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 4rem 4rem 0;
+      text-align: initial;
+    }
+    h2 {
+      color: $Black;
+      font-size: 2.5rem;
+    }
+    p {
+      color: $Dark-Gray;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.creation-section{
+    max-width: 100%;
+    margin: 5.2rem 1.2rem;
+    
+    position: relative;
+    @media (min-width: 992px) {
+      max-width: $Section-Width;
+    
+      margin: 5.2rem auto;
+    }
+    .creation-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2.5rem 0;
+        h3{
+            font-size: 1.8rem;
+        }
+        a{
+            text-decoration: none;
+            color: $Black;
+            border: 1px solid $Black;
+            padding: 0.1rem 1.2rem 0.2rem;
+            border-radius: 2px;
+        }
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+        .img-container{
+            position: relative;
+            img{
+                // height: 400px;
+                width: 100%;
+                object-fit: cover;
+                
+            }
+            h5{
+                position: absolute;
+                bottom: 1rem;
+                left: 1.2rem;
+                color: $White;
+                font-size: 1.2rem;
+                max-width: 48%;
+            }
+        }
+    }
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -250px; 
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    padding: 20px;
+}
+
+.drawer.open {
+    right: 0;
+}
+
+.close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+}

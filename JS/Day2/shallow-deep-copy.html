@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let original = {
+      //     title: "Recipe Book",
+      //     details: { pages: 100 },
+      //   };
+
+      //   let shallowCopy = { ...original };
+      //   shallowCopy.title = "John";
+      //   shallowCopy.details.pages = 200;
+
+      //   console.log("shallowCopy", shallowCopy);
+      //   console.log("original", original);
+
+      let original = {
+        title: "Recipe Book",
+        details: { pages: 100 },
+      };
+      let deepCopy = JSON.parse(JSON.stringify(original));
+      deepCopy.title = "Jonh";
+      deepCopy.details.pages = 150;
+      console.log("deepCopy", deepCopy);
+      console.log("original", original);
+    </script>
+  </body>
+</html>
