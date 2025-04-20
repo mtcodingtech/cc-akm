@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$Bright-Red: hsl(12, 88%, 59%);
+$Dark-Blue: hsl(228, 39%, 23%);
+$Dark-Grayish-Blue: hsl(227, 12%, 61%);
+$Very-Dark-Blue: hsl(233, 12%, 13%);
+$Very-Pale-Red: hsl(13, 100%, 96%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.custom-nav {
+  .navbar-collapse {
+    flex-basis: 70%;
+    flex-grow: 0;
+  }
+}
