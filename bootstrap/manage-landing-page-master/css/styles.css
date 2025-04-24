@@ -50,7 +50,7 @@ p {
   background-position: top -3rem right -3rem;
 }
 .hero-section .main-content {
-  height: 70vh;
+  min-height: 70vh;
 }
 .hero-section .main-content .content-container {
   width: 100%;
@@ -61,7 +61,11 @@ p {
   }
 }
 
-.profile {
-  top: -2rem;
+.testimony-section .profile {
+  top: -4rem;
+  left: 6rem;
   z-index: 5;
+}
+.testimony-section .owl-carousel .owl-stage-outer {
+  overflow: initial;
 }/*# sourceMappingURL=styles.css.map */
