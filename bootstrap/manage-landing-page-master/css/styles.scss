@@ -78,3 +78,12 @@ p {
   }
 }
 
+.simplify-section {
+  background-color: $Bright-Red;
+  min-height: 20vh;
+  background-image: url("/images/bg-simplify-section-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
