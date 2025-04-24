@@ -51,4 +51,17 @@ p {
 }
 .hero-section .main-content {
   height: 70vh;
+}
+.hero-section .main-content .content-container {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .hero-section .main-content .content-container {
+    width: 75%;
+  }
+}
+
+.profile {
+  top: -2rem;
+  z-index: 5;
 }/*# sourceMappingURL=styles.css.map */

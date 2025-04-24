@@ -55,5 +55,18 @@ p {
   background-position: top -3rem right -3rem;
   .main-content {
     height: 70vh;
+
+    .content-container{
+      width: 100%;
+      @media (min-width : 992px) {
+        width: 75%;
+      }
+    }
   }
+}
+
+
+.profile {
+  top: -2rem;
+  z-index: 5;
 }
