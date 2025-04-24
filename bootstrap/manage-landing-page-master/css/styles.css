@@ -63,9 +63,9 @@ p {
 
 .testimony-section img {
   inset: 0;
-  top: -4rem;
+  top: -3rem;
   z-index: 5;
 }
-.testimony-section .owl-carousel .owl-stage-outer {
-  overflow: initial;
+.testimony-section .owl-carousel .owl-stage {
+  padding: 5rem 0 0;
 }/*# sourceMappingURL=styles.css.map */
